@@ -1,0 +1,33 @@
+body {
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #canvas {
+
+    border: white solid 10px;
+    height: 550px;
+    width: 400px;
+    position: absolute;
+    top: 210px;
+  }
+#scoreBoard {
+  border: white solid 10px;
+  height: 200px;
+  width: 200px;
+position: relative;
+
+}
+
+#resetBoard {
+
+  border: white solid 10px;
+  height: 200px;
+  width: 180px;
+position: relative;
+
+}
+button {
+  background: green;
+}
