@@ -1,1 +1,1 @@
-# fianlGame
+# snakeGame
