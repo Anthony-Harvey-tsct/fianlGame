@@ -7,15 +7,15 @@ body {
   #canvas {
 
     border: white solid 10px;
-    height: 400px;
-    width: 550px;
+    height: 608px;
+    width: 608px;
     position: absolute;
-    top: 220px;
+    top: 210px;
   }
 #scoreBoard {
   border: white solid 10px;
   height: 200px;
-  width: 23%;
+  width: 408px;
 position: relative;
 
 }
@@ -24,7 +24,7 @@ position: relative;
 
   border: white solid 10px;
   height: 200px;
-  width: 15%;
+  width: 180px;
 position: relative;
 
 }
