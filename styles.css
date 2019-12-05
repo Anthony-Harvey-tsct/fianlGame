@@ -1,16 +1,116 @@
-body{
-  background-color: black;
+body {
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #container{
+margin: auto;
+    display: block;
+  }
+  #gameBoard  {
+    border: white solid 10px;
+    height: 600px;
+    width: 600px;
+    position: relative;
+    top: 210px;
+  }
+   #snake {
+    border: red solid 1px;
+    background: green;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 300px;
+    left: 300px;
+  }
+   #apple {
+    border: red solid 1px;
+    border-radius: 50%;
+    background: red;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 200px;
+    left: 300px;
+  }
+#container1 {
+  display: flex;
+position: absolute;
 }
-    #gameCanvas {
-      background-color: gray;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    #score {
-      color:white;
-      text-align: center;
-      font-size: 140px;
-      font-family: 'Antic Slab', serif;
-    }
+#scoreBoard {
+  border: white solid 10px;
+  height: 200px;
+  width: 380px;
+}
+button {
+position: absolute;
+height: 40px;
+width: 60px;
+color: blue;
+top: 100px;
+right: 100px;
+}
+ #resetBoard {
+  border: white solid 10px;
+  height: 200px;
+  width: 200px;
+}
+body {
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #container{
+margin: auto;
+    display: block;
+  }
+  #gameBoard  {
+    border: white solid 10px;
+    height: 600px;
+    width: 600px;
+    position: relative;
+    top: 210px;
+  }
+   #snake {
+    border: red solid 1px;
+    background: green;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 300px;
+    left: 300px;
+  }
+   #apple {
+    border: red solid 1px;
+    border-radius: 50%;
+    background: red;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 200px;
+    left: 300px;
+  }
+#container1 {
+  display: flex;
+position: absolute;
+}
+#scoreBoard {
+  border: white solid 10px;
+  height: 200px;
+  width: 380px;
+}
+button {
+position: absolute;
+height: 40px;
+width: 60px;
+color: blue;
+top: 100px;
+right: 100px;
+}
+ #resetBoard {
+  border: white solid 10px;
+  height: 200px;
+  width: 200px;
+}
