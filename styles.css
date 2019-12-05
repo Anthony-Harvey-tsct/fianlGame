@@ -1,33 +1,16 @@
-body {
-    background: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  #canvas {
-
-    border: white solid 10px;
-    height: 608px;
-    width: 608px;
-    position: absolute;
-    top: 210px;
-  }
-#scoreBoard {
-  border: white solid 10px;
-  height: 200px;
-  width: 408px;
-position: relative;
-
+body{
+  background-color: black;
 }
-
-#resetBoard {
-
-  border: white solid 10px;
-  height: 200px;
-  width: 180px;
-position: relative;
-
-}
-button {
-  background: green;
-}
+    #gameCanvas {
+      background-color: gray;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    #score {
+      color:white;
+      text-align: center;
+      font-size: 140px;
+      font-family: 'Antic Slab', serif;
+    }
