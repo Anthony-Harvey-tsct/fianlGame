@@ -76,35 +76,3 @@ window.addEventListener("keydown", event => {
 }
 
 })
-
-function changeDirection(event) {
-     const ArrowLeft = value;
-     const ArrowRight = value;
-     const ArrowUp = value;
-     const ArrowDown = value;
-
-
-     if (changingDirection) return;
-     changingDirection = true;
-     const keyPressed = event.key;
-     const goingUp = snaketop  === -10;
-     const goingDown = snaketop === 10;
-     const goingRight = snakeleft === 10;
-     const goingLeft = snakeleft === -10;
-     if (keyPressed === ArrowLeft && !goingRight) {
-       dx = -10;
-       dy = 0;
-     }
-     if (keyPressed === ArrowUp && !goingDown) {
-       dx = 0;
-       dy = -10;
-     }
-     if (keyPressed === ArrowRight && !goingLeft) {
-       dx = 10;
-       dy = 0;
-     }
-     if (keyPressed === ArrowDown && !goingUp) {
-       dx = 0;
-       dy = 10;
-     }
-   }
