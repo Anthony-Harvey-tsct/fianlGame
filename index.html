@@ -3,14 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>Snake</title>
-    <script defer src="scripts.js">
+    <script defer src="script.js">
     </script>
     <link rel="stylesheet" href="styles.css" type="text/css">
     <title>Retro Snake</title>
   </head>
   <body>
-<canvas id="scoreBoard"></canvas>
-<canvas id="resetBoard"></canvas>
-<canvas id="canvas"></canvas>
-  </body>
+<div id="container">
+
+  <div id="container1">
+  <div id="scoreBoard"></div>
+  <div id="resetBoard">
+<button type="button" name="button">reset</button>
+  </div>
+  </div>
+  <div id="gameBoard">
+      <div id ="snake"></div>
+      <div id ="apple"></div>
+  </div>
+
+</div>
+</body>
 </html>
