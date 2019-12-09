@@ -34,7 +34,7 @@ margin: auto;
     top: 200px;
     left: 300px;
   }
-#container1 {
+#Wall {
   display: flex;
 position: absolute;
 }
@@ -55,4 +55,9 @@ right: 100px;
   border: white solid 10px;
   height: 200px;
   width: 200px;
+}
+p{
+  color:white;
+  font-size: 500%;
+  padding-left: 170px;
 }
