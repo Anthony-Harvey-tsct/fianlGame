@@ -9,80 +9,63 @@ let appletop = 200;
 let appleleft = 300;
 let snaketop = 300;
 let snakeleft = 300;
-let value = 300;
+
 
 // moving the snake
 
-let timer = setInterval(moveUp, 1000);
+let timer = setInterval(function() {}, 100);
 
 window.addEventListener("keydown", event => {
 
   if (event.key == "ArrowLeft") {
 
 
-event.preventDefault();
     clearInterval(timer);
-       timer = setInterval(function() {
-         if (snakeleft >=0) {
-           snake.style.left = snakeleft + 'px'
-           snakeleft -= 10;
-         }
-       }, 150);
+    timer = setInterval(function() {
+      if (snakeleft >= 0) {
+        snake.style.left = snakeleft + 'px'
+        snakeleft -= 10;
+      }
+    }, 100);
 
 
   } else if (event.key == "ArrowUp") {
-event.preventDefault();
+
     clearInterval(timer);
 
-       timer = setInterval(function() {
-         if (snaketop >=0) {
-         snake.style.top = snaketop + 'px'
+    timer = setInterval(function() {
+      if (snaketop >= 0) {
+        snake.style.top = snaketop + 'px'
 
-         snaketop -= 10;
-         }
-       }, 150);
-     }
-
-
-
-  else if (event.key == "ArrowRight") {
-    event.preventDefault();
+        snaketop -= 10;
+      }
+    }, 100);
+  } else if (event.key == "ArrowRight") {
     clearInterval(timer);
 
-       timer = setInterval(function() {
-        if (snakeleft <=580) {
-         snake.style.left = snakeleft + 'px'
+    timer = setInterval(function() {
+      if (snakeleft <= 580) {
+        snake.style.left = snakeleft + 'px'
 
-         snakeleft += 10;
-        }
-       }, 150);
-     }
+        snakeleft += 10;
+      }
+    }, 100);
+  } else if (event.key == "ArrowDown") {
 
-
-  else if (event.key == "ArrowDown") {
-event.preventDefault();
     clearInterval(timer);
 
-       timer = setInterval(function() {
-          if (snaketop <=580) {
-         snake.style.top = snaketop + 'px'
+    timer = setInterval(function() {
+      if (snaketop <= 580) {
+        snake.style.top = snaketop + 'px'
 
-         snaketop += 10;
-        }
-       }, 150);
-     }
+        snaketop += 10;
+      }
+    }, 100);
+  }
 
-})
-
-function moveUp() {
-  console.log("Up");
-}
-function moveLeft() {
-  console.log("left")
-}
-function moveDown() {
-  console.log("Down");
-}
-function moveRight() {
-  console.log("Right")
-}
+});
+//  getting the apple for the snake
+let height = 20;
+let width = 20;
+snake.style.height = height + 'px';
+snake.style.height = width + 'px';
