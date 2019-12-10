@@ -9,11 +9,12 @@ let appletop = 200;
 let appleleft = 300;
 let snaketop = 300;
 let snakeleft = 300;
-let value = 300;
+
 
 // moving the snake
 
-let timer = setInterval(moveUp, 1000);
+let timer = setInterval(function() {
+}, 100);
 
 window.addEventListener("keydown", event => {
 
@@ -27,7 +28,7 @@ window.addEventListener("keydown", event => {
            snake.style.left = snakeleft + 'px'
            snakeleft -= 10
          }
-       }, 150);
+       }, 100);
 
 
   } else if (event.key == "ArrowUp") {
@@ -40,7 +41,7 @@ window.addEventListener("keydown", event => {
 
          snaketop -= 10
          }
-       }, 150);
+       }, 100);
      }
 
 
@@ -55,7 +56,7 @@ window.addEventListener("keydown", event => {
 
          snakeleft += 10
         }
-       }, 150);
+      }, 100);
      }
 
 
@@ -69,7 +70,7 @@ window.addEventListener("keydown", event => {
 
          snaketop += 10
         }
-       }, 150);
+      }, 100);
      }
 
-})
+});
