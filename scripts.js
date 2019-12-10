@@ -9,7 +9,7 @@ let appletop = 200;
 let appleleft = 300;
 let snaketop = 300;
 let snakeleft = 300;
-
+let value = 300;
 
 // moving the snake
 
@@ -19,7 +19,7 @@ window.addEventListener("keydown", event => {
 
   if (event.key == "ArrowLeft") {
 
-
+      event.preventDefault();
     clearInterval(timer);
     timer = setInterval(function() {
       if (snakeleft >= 0) {
@@ -30,7 +30,7 @@ window.addEventListener("keydown", event => {
 
 
   } else if (event.key == "ArrowUp") {
-
+event.preventDefault();
     clearInterval(timer);
 
     timer = setInterval(function() {
@@ -41,6 +41,7 @@ window.addEventListener("keydown", event => {
       }
     }, 100);
   } else if (event.key == "ArrowRight") {
+event.preventDefault();
     clearInterval(timer);
 
     timer = setInterval(function() {
@@ -51,7 +52,7 @@ window.addEventListener("keydown", event => {
       }
     }, 100);
   } else if (event.key == "ArrowDown") {
-
+event.preventDefault();
     clearInterval(timer);
 
     timer = setInterval(function() {
@@ -64,4 +65,3 @@ window.addEventListener("keydown", event => {
   }
 
 });
-//  getting the apple for the snake
