@@ -65,7 +65,3 @@ window.addEventListener("keydown", event => {
 
 });
 //  getting the apple for the snake
-let height = 20;
-let width = 20;
-snake.style.height = height + 'px';
-snake.style.height = width + 'px';
