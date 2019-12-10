@@ -20,12 +20,11 @@ window.addEventListener("keydown", event => {
   if (event.key == "ArrowLeft") {
 
 
-
     clearInterval(timer);
     timer = setInterval(function() {
       if (snakeleft >= 0) {
         snake.style.left = snakeleft + 'px'
-        snakeleft -= 10
+        snakeleft -= 10;
       }
     }, 100);
 
@@ -38,7 +37,7 @@ window.addEventListener("keydown", event => {
       if (snaketop >= 0) {
         snake.style.top = snaketop + 'px'
 
-        snaketop -= 10
+        snaketop -= 10;
       }
     }, 100);
   } else if (event.key == "ArrowRight") {
@@ -48,7 +47,7 @@ window.addEventListener("keydown", event => {
       if (snakeleft <= 580) {
         snake.style.left = snakeleft + 'px'
 
-        snakeleft += 10
+        snakeleft += 10;
       }
     }, 100);
   } else if (event.key == "ArrowDown") {
@@ -59,9 +58,14 @@ window.addEventListener("keydown", event => {
       if (snaketop <= 580) {
         snake.style.top = snaketop + 'px'
 
-        snaketop += 10
+        snaketop += 10;
       }
     }, 100);
   }
 
 });
+//  getting the apple for the snake
+let height = 20;
+let width = 20;
+snake.style.height = height + 'px';
+snake.style.height = width + 'px';
