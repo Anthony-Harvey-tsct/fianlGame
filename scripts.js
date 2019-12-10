@@ -13,8 +13,7 @@ let snakeleft = 300;
 
 // moving the snake
 
-let timer = setInterval(function() {
-}, 100);
+let timer = setInterval(function() {}, 100);
 
 window.addEventListener("keydown", event => {
 
@@ -23,54 +22,46 @@ window.addEventListener("keydown", event => {
 
 
     clearInterval(timer);
-       timer = setInterval(function() {
-         if (snakeleft >=0) {
-           snake.style.left = snakeleft + 'px'
-           snakeleft -= 10
-         }
-       }, 100);
+    timer = setInterval(function() {
+      if (snakeleft >= 0) {
+        snake.style.left = snakeleft + 'px'
+        snakeleft -= 10
+      }
+    }, 100);
 
 
   } else if (event.key == "ArrowUp") {
 
     clearInterval(timer);
 
-       timer = setInterval(function() {
-         if (snaketop >=0) {
-         snake.style.top = snaketop + 'px'
+    timer = setInterval(function() {
+      if (snaketop >= 0) {
+        snake.style.top = snaketop + 'px'
 
-         snaketop -= 10
-         }
-       }, 100);
-     }
-
-
-
-
-  else if (event.key == "ArrowRight") {
+        snaketop -= 10
+      }
+    }, 100);
+  } else if (event.key == "ArrowRight") {
     clearInterval(timer);
 
-       timer = setInterval(function() {
-        if (snakeleft <=580) {
-         snake.style.left = snakeleft + 'px'
+    timer = setInterval(function() {
+      if (snakeleft <= 580) {
+        snake.style.left = snakeleft + 'px'
 
-         snakeleft += 10
-        }
-      }, 100);
-     }
-
-
-  else if (event.key == "ArrowDown") {
+        snakeleft += 10
+      }
+    }, 100);
+  } else if (event.key == "ArrowDown") {
 
     clearInterval(timer);
 
-       timer = setInterval(function() {
-          if (snaketop <=580) {
-         snake.style.top = snaketop + 'px'
+    timer = setInterval(function() {
+      if (snaketop <= 580) {
+        snake.style.top = snaketop + 'px'
 
-         snaketop += 10
-        }
-      }, 100);
-     }
+        snaketop += 10
+      }
+    }, 100);
+  }
 
 });
