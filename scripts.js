@@ -12,21 +12,17 @@ let score = 0;
 window.addEventListener("keydown", event => {
   if (event.key == "ArrowRight") {
     direction = "right";
-    event.preventDefault();
   }
   else if (event.key == "ArrowDown") {
     direction = "down";
-    event.preventDefault();
   }
   else if (event.key == "ArrowUp") {
     direction = "top";
-    event.preventDefault();
   }
   else if (event.key == "ArrowLeft") {
     direction = "left";
-    event.preventDefault();
   }
-
+  event.preventDefault();
 });
 const main = document.getElementsByTagName("main")[0];
 let snake = [
@@ -88,17 +84,10 @@ function draw() {
   if (snake[0][0] == food[0] && snake[0][1] == food[1]) {
     pickedUp = true;
     food = [Math.floor(Math.random() * 30) * 20, Math.floor(Math.random() * 30) * 20];
-
     //made score increase
     score++;
     scores.textContent = score;
-    time = setInterval(draw, 100--);
   }
-
-
-
-
-
   // stopping the game
   if (snakeleft >= 590 || snaketop >=590 || snakeleft < 0 || snaketop < 0) {
     clearInterval(time);
