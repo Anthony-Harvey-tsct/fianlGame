@@ -79,4 +79,18 @@ function draw() {
   apple.style.top = food[1] + "px";
   apple.style.color = "green";
   main.appendChild(apple);
+
+  // randomizing the snake and adding the score
+  if (snake[0][0] == food[0] && snake[0][1] == food[1]) {
+    pickedUp = true;
+    food = [Math.floor(Math.random() * 30) * 20, Math.floor(Math.random() * 30) * 20];
+    //made score increase
+    score++;
+    scores.textContent = score;
+  }
+  // stopping the game
+  if (snakeleft >= 590 || snaketop >=590 || snakeleft < 0 || snaketop < 0) {
+    clearInterval(time);
+    end.style.visibility = "visible";
+  }
 }
