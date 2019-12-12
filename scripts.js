@@ -124,6 +124,7 @@ function draw() {
     ]
     //time = setInterval(draw, 100);
     direction = "";
+    clearInterval(time);
     time = setInterval(draw, 100);
 
   }
