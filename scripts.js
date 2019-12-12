@@ -13,14 +13,11 @@ let int = 100;
 window.addEventListener("keydown", event => {
   if (event.key == "ArrowRight") {
     direction = "right";
-  }
-  else if (event.key == "ArrowDown") {
+  } else if (event.key == "ArrowDown") {
     direction = "down";
-  }
-  else if (event.key == "ArrowUp") {
+  } else if (event.key == "ArrowUp") {
     direction = "top";
-  }
-  else if (event.key == "ArrowLeft") {
+  } else if (event.key == "ArrowLeft") {
     direction = "left";
   }
   event.preventDefault();
@@ -90,11 +87,11 @@ function draw() {
     scores.textContent = score;
     // make the snake faster
     clearInterval(time);
-    int-=5;
+    int -= 5;
     time = setInterval(draw, int);
   }
   // stopping the game
-  if (snakeleft >= 590 || snaketop >=590 || snakeleft < 0 || snaketop < 0) {
+  if (snakeleft >= 590 || snaketop >= 590 || snakeleft < 0 || snaketop < 0) {
     clearInterval(time);
     end.style.visibility = "visible";
   }
