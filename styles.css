@@ -1,63 +1,62 @@
 body {
-    background: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  #container{
-margin: auto;
-    display: block;
-  }
-  #gameBoard  {
-    border: white solid 10px;
-    height: 600px;
-    width: 600px;
-    position: relative;
-    top: 210px;
-  }
-   #snake {
-    border: purple solid 1px;
-    background: red;
-    height: 20px;
-    width: 20px;
-    position: absolute;
-    top: 300px;
-    left: 300px;
-  }
-   #apple {
-    border: yellow solid 1px;
-    border-radius: 50%;
-    background: green;
-    height: 20px;
-    width: 20px;
-    position: absolute;
-    top: 200px;
-    left: 300px;
-  }
-#Wall {
-  display: flex;
-position: absolute;
+  background: black;
 }
-#scoreBoard {
-  border: white solid 10px;
-  height: 200px;
-  width: 380px;
+main {
+  height: 600px;
+  width: 600px;
+  border: 8px solid white;
+  position: absolute;
+  top: 300px;
+  left: 300px;
 }
-button {
-position: absolute;
-height: 40px;
-width: 60px;
-color: blue;
-top: 100px;
-right: 100px;
+div {
+  height: 20px;
+  width: 20px;
+  background: red;
+  position: absolute;
 }
- #resetBoard {
-  border: white solid 10px;
-  height: 200px;
+.apple {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  background: green;
+  border-radius: 50%;
+}
+p, #score {
+  text-align: center;
+  border: 4px solid white;
   width: 200px;
+  height: 100px;
 }
-p{
-  color:white;
-  font-size: 500%;
-  padding-left: 170px;
+#score {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 170px;
+  left: 300px;
+}
+p, #gameover {
+  text-align: center;
+  border: 8px solid white;
+  width: 200px;
+  height: 90px;
+}
+#gameOver {
+  visibility: hidden;
+  font-size: 20px;
+  color: yellow;
+  position: absolute;
+  top: 180px;
+  left: 700px;
+}
+button, #button {
+  border: 3px solid white;
+  width: 200px;
+  height: 100px;
+}
+#button {
+  position: absolute;
+  top: 200px;
+  left: 500px;
+  background: yellow;
 }
