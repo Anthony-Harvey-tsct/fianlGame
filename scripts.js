@@ -29,7 +29,7 @@ let snake = [
   [snakeleft, snaketop]
 ];
 let food = [300, 300];
-let time = setInterval(draw, 100);
+let time = setInterval(draw, 50);
 
 
 function draw() {
@@ -125,7 +125,7 @@ function draw() {
     //time = setInterval(draw, 100);
     direction = "";
     clearInterval(time);
-    time = setInterval(draw, 100);
+    time = setInterval(draw, 50);
 
   }
 
