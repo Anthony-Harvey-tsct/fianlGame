@@ -93,6 +93,18 @@ function draw() {
     clearInterval(time);
     end.style.visibility = "visible";
   }
+
+  // reset score
+  button.addEventListener("click", resetscore)
+
+  function resetscore() {
+
+    scores.textContent = "0";
+    score = 0;
+    scores.textContent = "0";
+
+
+  }
   // reset the game
   button.addEventListener("click", game)
 
