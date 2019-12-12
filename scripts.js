@@ -7,7 +7,7 @@ let snakeleft = 100;
 let snaketop = 100;
 let pickedUp = false;
 let score = 0;
-let int = 50;
+let int = 100;
 
 // creating keyevents and controlling the snake using arrow keys
 window.addEventListener("keydown", event => {
@@ -30,7 +30,7 @@ let snake = [
   [snakeleft, snaketop]
 ];
 let food = [300, 300];
-let time = setInterval(draw, 50);
+let time = setInterval(draw, 100);
 
 
 function draw() {
@@ -88,8 +88,9 @@ function draw() {
     //made score increase
     score++;
     scores.textContent = score;
+    // make the snake faster
     clearInterval(time);
-    int-=10;
+    int-=5;
     time = setInterval(draw, int);
   }
   // stopping the game
