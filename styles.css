@@ -1,6 +1,7 @@
 body {
   background: black;
 }
+
 main {
   height: 600px;
   width: 600px;
@@ -9,12 +10,14 @@ main {
   top: 300px;
   left: 300px;
 }
+
 div {
   height: 20px;
   width: 20px;
   background: red;
   position: absolute;
 }
+
 .apple {
   height: 20px;
   width: 20px;
@@ -22,12 +25,14 @@ div {
   background: green;
   border-radius: 50%;
 }
+
 p, #score {
   text-align: center;
   border: 4px solid white;
   width: 200px;
   height: 100px;
 }
+
 #score {
   color: white;
   font-size: 30px;
@@ -35,12 +40,14 @@ p, #score {
   top: 170px;
   left: 300px;
 }
+
 p, #gameover {
   text-align: center;
   border: 8px solid white;
   width: 200px;
   height: 90px;
 }
+
 #gameOver {
   visibility: hidden;
   font-size: 20px;
@@ -49,11 +56,13 @@ p, #gameover {
   top: 180px;
   left: 700px;
 }
+
 button, #button {
   border: 3px solid white;
   width: 200px;
   height: 100px;
 }
+
 #button {
   font-size: 24px;
   position: absolute;
