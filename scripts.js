@@ -93,4 +93,27 @@ function draw() {
     clearInterval(time);
     end.style.visibility = "visible";
   }
+  // reset the game
+  button.addEventListener("click", game)
+
+  function game() {
+    end.style.visibility = "hidden";
+
+  }
+  button.addEventListener("click", startgame)
+
+  function startgame() {
+
+    snakeleft = 100;
+    snaketop = 100;
+
+    snake = [
+      [snakeleft, snaketop]
+    ]
+    //time = setInterval(draw, 100);
+    direction = "";
+    time = setInterval(draw, 100);
+
+  }
+
 }
