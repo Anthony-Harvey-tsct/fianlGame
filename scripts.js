@@ -12,15 +12,19 @@ let int = 100;
 // creating keyevents and controlling the snake using arrow keys
 window.addEventListener("keydown", event => {
   if (event.key == "ArrowRight") {
+    event.preventDefault();
     direction = "right";
   } else if (event.key == "ArrowDown") {
+    event.preventDefault();
     direction = "down";
   } else if (event.key == "ArrowUp") {
+    event.preventDefault();
     direction = "top";
   } else if (event.key == "ArrowLeft") {
+    event.preventDefault();
     direction = "left";
   }
-  event.preventDefault();
+
 });
 const main = document.getElementsByTagName("main")[0];
 let snake = [
