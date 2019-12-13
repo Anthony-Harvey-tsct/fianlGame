@@ -124,7 +124,7 @@ function draw() {
     snake = [
       [snakeleft, snaketop]
     ]
-    //time = setInterval(draw, 100);
+he;
     direction = "";
     clearInterval(time);
     time = setInterval(draw, 50);
