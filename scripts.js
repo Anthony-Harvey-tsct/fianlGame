@@ -124,10 +124,10 @@ function draw() {
     snake = [
       [snakeleft, snaketop]
     ]
-he;
+
     direction = "";
     clearInterval(time);
-    time = setInterval(draw, 50);
+    time = setInterval(draw, 100);
 
   }
 
