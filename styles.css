@@ -1,8 +1,9 @@
 body {
-  background: black;
+  background: blue;
 }
 
 main {
+  background: black;
   height: 600px;
   width: 600px;
   border: 8px solid white;
@@ -12,6 +13,8 @@ main {
 }
 
 div {
+  border: green solid 1px;
+  border-radius: 25%;
   height: 20px;
   width: 20px;
   background: red;
@@ -55,6 +58,15 @@ p, #gameover {
   position: absolute;
   top: 180px;
   left: 700px;
+}
+h2 {
+  border: 8px solid white;
+  position: absolute;
+  top: 220px;
+  left: 750px;
+  visibility: hidden;
+  color: white;
+
 }
 
 button, #button {

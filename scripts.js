@@ -1,5 +1,6 @@
 const scores = document.getElementById("score");
 const end = document.getElementById("gameOver");
+const highScore = document.getElementById("highScore");
 const button = document.getElementById("button");
 // defining
 let direction = "";
@@ -7,7 +8,7 @@ let snakeleft = 100;
 let snaketop = 100;
 let pickedUp = false;
 let score = 0;
-let int = 100;
+let int = 80;
 
 // creating keyevents and controlling the snake using arrow keys
 window.addEventListener("keydown", event => {
@@ -31,7 +32,7 @@ let snake = [
   [snakeleft, snaketop]
 ];
 let food = [300, 300];
-let time = setInterval(draw, 100);
+let time = setInterval(draw, 80);
 
 
 function draw() {
@@ -91,19 +92,24 @@ function draw() {
     scores.textContent = score;
     // make the snake faster
     clearInterval(time);
-    int -= 5;
+    int -= 3;
     time = setInterval(draw, int);
   }
-  // stopping the game
+  //  game Over
   if (snakeleft >= 590 || snaketop >= 590 || snakeleft < 0 || snaketop < 0) {
     clearInterval(time);
     end.style.visibility = "visible";
+
+  }
+  if (score == 20) {
+    highScore.style.visibility = "visible";
   }
 
   // reset score
   button.addEventListener("click", resetscore)
 
   function resetscore() {
+    clearInterval(time);
 
     scores.textContent = "0";
     score = 0;
@@ -115,12 +121,17 @@ function draw() {
   button.addEventListener("click", game)
 
   function game() {
+    clearInterval(time);
     end.style.visibility = "hidden";
+    highScore.style.visibility = "hidden";
+    food = [Math.floor(Math.random() * 30) * 20, Math.floor(Math.random() * 30) * 20];
+
 
   }
   button.addEventListener("click", startgame)
 
   function startgame() {
+    clearInterval(time);
 
     snakeleft = 100;
     snaketop = 100;
@@ -131,7 +142,7 @@ function draw() {
 
     direction = "";
     clearInterval(time);
-    time = setInterval(draw, 100);
+    time = setInterval(draw, 80);
 
   }
 
